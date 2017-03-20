@@ -17,7 +17,7 @@ public class NewStudentBean {
     public String save() {
         Student student = new Student(studentFirstName, studentLastName);
         entityManager.persist(student);
-        return "main";
+        return "main.xhtml";
     }
     
     public String getStudentFirstName() {
